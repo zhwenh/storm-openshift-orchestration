@@ -8,7 +8,7 @@
 构建镜像
 ------------------------
 
-```oc new-build https://github.com:asiainfoLDP/storm-openshift-orchestration.git --context-dir='image' ```
+```oc new-build https://github.com/asiainfoLDP/storm-openshift-orchestration.git --context-dir='image' ```
 *注意修改编排文件中的镜像名*
 
 创建编排
