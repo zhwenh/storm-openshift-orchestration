@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sb-instanceid-sn
+spec:
+  selector:
+    sb-instanceid-storm: nimbus
+  ports:
+  - protocol: TCP
+    port: 6627
+

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sb-instanceid-su
+spec:
+  selector:
+    sb-instanceid-storm: ui
+  ports:
+  - protocol: TCP
+    port: 8080
+
