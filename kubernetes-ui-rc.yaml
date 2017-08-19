@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: sb-instanceid-su
+  name: sb-instanceid-stormui
 spec:
   replicas: 1
   selector:
@@ -23,7 +23,7 @@ spec:
         - name: ZK_SERVER_1_SERVICE_HOST
           value: "sb-instanceid-zk"
         - name: APACHE_STORM_NIMBUS_SERVICE_HOST
-          value: sb-instanceid-sn
+          value: sb-instanceid-stormnb
         volumeMounts:
         - name: storm-data
           mountPath: /opt/apache-storm/storm-local
